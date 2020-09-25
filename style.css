@@ -1,42 +1,253 @@
-body {
-    background-image: 
-    url("https://cdn11.bigcommerce.com/s-hpuhgk/images/stencil/1000x1000/products/1288/21370/handmade-tile-moroccan-decorative-relief-blue-white-20cm-2__78932.1579868888.jpg?c=2");
+/* MAIN NAV */
+.navbar-nav { 
+    font-size: 20px;
+    margin-left: auto;
+    font-family: 'Inconsolata', monospace;
+} 
+
+/* BODY LAYOUTS */
+.about-body {
+    background-image: url("https://i.pinimg.com/originals/f5/21/80/f52180972df47e5fb019f3cd36d23a26.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.header {
+.portfolio-body {
+    background-image: url("https://athenaexecutiveservices.com/wp-content/uploads/2019/01/StockSnap_IDMXYBH4P1-1080x720.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-body {
+    background-image: url("https://www.youngupstarts.com/wp-content/uploads/2010/12/Idea-Generation.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* HOME PAGE */
+header {
+    display: block;
+    position: relative;
+    left: 210px;
+    top: 100px;
+    z-index: 1;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;  
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+    font-size: 31px;
+    height: 140px;
+    display: block;
+    top: 130px;
+    left: 1px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    }
+  }
+
+span {
+    color: #7599ee;
+}
+
+#left-col {
+    background-image: url("https://ministryofcurry.com/wp-content/uploads/2020/03/curry-leaves-3-850x1275.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+#right-col {
+    background-color: #902D9B;
+}
+
+@media only screen and (max-width: 450px) {
+    #right-col {
+        display: none;
+    }
+}
+
+.view-work {
+    font-size: 15px;
+    font-family:'Inconsolata', monospace;
+    position: relative;
+    left: 800px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 450px) {
+    .view-work {
+        display: none;
+    }
+}
+
+/* ABOUT ME */
+.about-me {
+    display: flex;
+    width: 100%;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
-    background-color: black;
-    font-size: 30px;
-    opacity: 0.8;
-    padding: 20px;
+    font-family: 'Marck Script', cursive;
+    padding: 10px;
+    color: black;
     margin: 25px;
+    font-weight: 600;
+    opacity: 0.9;
 }
 
-img {
+.about-me:before,
+.about-me:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 20px;
+    flex: 1 0 20px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    padding: 5px;
+    color: black;
+    margin: 25px;
+    opacity: 0.9;
+    font-size: 30px;
+}
+
+.details-about {
+    font-family: 'Inconsolata', monospace;
+    background: whitesmoke;  
+    padding: 20px;
+    line-height: 30px;
+    border-style: solid;
+    border-color: #3E395E;
+    border-width: 0.5px;
+}
+
+
+.logos-about {
+    display: block;
+    background: #3E395E;
+    color: white;
+    padding: 10px;
+    border-radius: 80%;
+}
+
+/* PORTFOLIO PAGE */
+.projects {
+    display: flex;
+    width: 100%;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    padding: 10px;
+    color: white;
+    margin: 25px;
+    opacity: 0.9;
+}
+
+.projects:before,
+.projects:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 20px;
+    flex: 1 0 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .projects {
+        font-size: 30px;
+    }
+}
+
+.project_images {
+    border-style: double;
+    border-color: black;
+    border-width: 8px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .project_images {
+        width: 300px;
+        height: 130px;
+    }
+}
+
+.project-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 20px 10px 5px white;
+    margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    border-color: black;
+    width: 450px;
 }
 
-h2 {
+@media only screen and (max-width: 450px) {
+    .project-btn {
+        width: 270px;
+    }
+}
+
+/* CONTACT PAGE */
+.collaborate {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
-    background-color: black;
-    font-size: 25px;
-    opacity: 0.8;
+    font-family: 'Inconsolata', monospace;
     padding: 20px;
-    margin: 25px;
+    font-weight: bolder;
+    color: black;
 }
 
-ul {
-    text-align: center;
-    color: white;
-    background-color: black;
+.collaborate:before,
+.collaborate:after {
+    content: '';
+    border-top: 2px solid;
+    border-color: black;
+    margin: 0 20px 0 20px;
+    flex: 1 0 20px;
+}
+
+p {
+    background: white;
     font-size: 25px;
-    padding: 50px;
-    opacity: 0.8;
-    margin: 25px;
-
+    font-family: 'Marck Script', cursive;
+    position: relative;
+    bottom: 25px;
+    color: #3E395E;
+    padding: 5px;
+    text-align: center;
 }
+
+.link-contact{
+    text-decoration: none;
+    color: white;
+}
+
+.link-contact:hover {
+    color: black;
+}
+
+.logos-contact {
+    background: #41518E;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 10px 7px 7px black;
+    border-radius: 30%;
+}  
