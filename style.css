@@ -7,22 +7,22 @@
 
 /* BODY LAYOUTS */
 .about-body {
-    background-image: url("https://i.pinimg.com/originals/f5/21/80/f52180972df47e5fb019f3cd36d23a26.jpg");
+    background-image: url("https://img.freepik.com/free-photo/close-up-white-wood-texture-background-rustic-wooden-vertical_35257-283.jpg?size=626&ext=jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+
+  
 }
 
 .portfolio-body {
     background-image: url("https://athenaexecutiveservices.com/wp-content/uploads/2019/01/StockSnap_IDMXYBH4P1-1080x720.jpg");
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
 }
 
 .contact-body {
-    background-image: url("https://www.youngupstarts.com/wp-content/uploads/2010/12/Idea-Generation.jpg");
+    background-image: url("https://www.masterdc.com/images/photos/best-music-for-programmers.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -89,62 +89,69 @@ span {
 
 /* ABOUT ME */
 .about-me {
-    display: flex;
     width: 100%;
-    font-size: 50px;
+    font-size: 80px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Marck Script', cursive;
-    padding: 10px;
-    color: black;
-    margin: 25px;
-    font-weight: 600;
-    opacity: 0.9;
-}
-
-.about-me:before,
-.about-me:after {
-    content: '';
-    border-top: 2px solid;
-    margin: 0 20px 0 20px;
-    flex: 1 0 20px;
-}
-
-h3 {
-    text-align: center;
     font-family: 'Inconsolata', monospace;
-    padding: 5px;
+    margin-bottom: 20px;
+    font-weight: bolder;
     color: black;
-    margin: 25px;
-    opacity: 0.9;
-    font-size: 30px;
 }
 
 .details-about {
     font-family: 'Inconsolata', monospace;
-    background: whitesmoke;  
-    padding: 20px;
+    line-height: 40px;
+    font-size: 20px;
     line-height: 30px;
-    border-style: solid;
-    border-color: #3E395E;
-    border-width: 0.5px;
 }
 
+.aboutmeBtn {
+    font-family: 'Inconsolata', monospace;
+    border-radius: 4px;
+    background-color: #f6f5fa;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .aboutmeBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .aboutmeBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .aboutmeBtn:hover span {
+    padding-right: 25px;
+  }
+  
+  .aboutmeBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
-.logos-about {
-    display: block;
-    background: #3E395E;
-    color: white;
-    padding: 10px;
-    border-radius: 80%;
-}
 
 /* PORTFOLIO PAGE */
 .projects {
     display: flex;
     width: 100%;
-    font-size: 50px;
+    font-size: 60px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -152,7 +159,6 @@ h3 {
     padding: 10px;
     color: white;
     margin: 25px;
-    opacity: 0.9;
 }
 
 .projects:before,
@@ -187,13 +193,13 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Inconsolata', monospace;
     color: black;
     font-size: 20px;
     background-color: white;
-    border-color: black;
-    width: 450px;
+    border-style: none;
+    width: 400px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -211,26 +217,26 @@ h3 {
     text-align: center;
     font-family: 'Inconsolata', monospace;
     padding: 20px;
+    font-size: 60px;
     font-weight: bolder;
-    color: black;
+    color: white;
 }
 
 .collaborate:before,
 .collaborate:after {
     content: '';
     border-top: 2px solid;
-    border-color: black;
+    border-color: white;
     margin: 0 20px 0 20px;
     flex: 1 0 20px;
 }
 
-p {
-    background: white;
-    font-size: 25px;
+.contactLogo {
+    font-size: 30px;
     font-family: 'Marck Script', cursive;
     position: relative;
     bottom: 25px;
-    color: #3E395E;
+    color: white;
     padding: 5px;
     text-align: center;
 }
